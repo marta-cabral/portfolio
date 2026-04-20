@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marta Cabral</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <style>
+      @font-face {
+        font-family: SfRegular;
+        src: url(fonts/Lyon\ Text\ Regular.otf);
+      }
+
+      @font-face {
+        font-family: SFBold;
+        src: url(fonts/Lyon\ Text\ Regular\ No.\ 2.otf);
+      }
+      @font-face {
+        font-family: SaBold;
+        src: url(fonts/ABCSocial-Black-Trial.woff);
+      }
+      body {
+        overflow: hidden; /* Lock scrolling */
+        margin: 0;
+        padding: 0;
+      }
+
+      .Entrance {
+        background-color: #000;
+        cursor: none;
+      }
+
+      .custom-cursor {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background-color: #ff4df9;
+        border-radius: 50%;
+        pointer-events: none; /* Ensures the cursor doesn't block clicks */
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        transition: transform 0.3s ease;
+      }
+
+      .content__img {
+        max-width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      .center-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: SfRegular, serif;
+        color: #ff4df9;
+        font-size: 2rem;
+        text-decoration: none;
+        z-index: 10;
+        transition: color 0.3s ease;
+      }
+
+      .indication {
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: SaBold, sans-serif;
+        color: #ffffff;
+        font-size: 0.7rem;
+        transition: color 0.3s ease;
+      }
+
+      .center-link:hover {
+        background-color: #ff4df9;
+        color: #000000;
+      }
+
+      @media (max-width: 900px) {
+        .Entrance {
+          width: 100vw;
+          height: 100vh;
+          margin: 0;
+        }
+        .custom-cursor {
+          display: none;
+        }
+        .center-link {
+          font-size: 1.2rem;
+        }
+
+        .indication {
+          top: 55%;
+          font-size: 0.5rem;
+        }
+
+        .content__img {
+          max-width: 90px;
+        }
+      }
+    </style>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-PMYCKTF0H9"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-PMYCKTF0H9");
+  </script>
+
+  <body class="Entrance">
+    <!-- Link in the center -->
+    <div class="custom-cursor"></div>
+    <a href="projects.html" class="center-link">Marta Cabral</a>
+
+    <p class="indication">( Click to see projects! 👀 )</p>
+
+    <div class="content">
+      <img class="content__img" src="img/001.png" />
+      <img class="content__img" src="img/002.png" />
+      <img class="content__img" src="img/003.png" />
+      <img class="content__img" src="img/004.png" />
+      <img class="content__img" src="img/005.png" />
+      <img class="content__img" src="img/006.png" />
+      <img class="content__img" src="img/007.png" />
+      <img class="content__img" src="img/008.png" />
+      <img class="content__img" src="img/009.png" />
+      <img class="content__img" src="img/010.png" />
+      <img class="content__img" src="img/011.png" />
+    </div>
+
+    <!-- Sketch -->
+    <script src="script.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
